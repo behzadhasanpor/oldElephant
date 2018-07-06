@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto 0;
+}
+nav{
+    font-family: font;
+    font-size: 25pt;
+    text-align: left;
+}
+nav img , h3{
+    position:absolute;
+    left: 50%;
+}
+a{
+    color: blueviolet;
+}
+nav ul{
+    list-style: none;
+}
+div#content{
+    width: 45%;
+    font-family: passage;
+    min-height: 50%;
+    background-color: dimgrey;
+    color: wheat;
+}
+div#content a{
+    color: cornflowerblue;
+}
+div#content form input{
+    background-color: wheat;
+    color: black;
+}
+div#content form input[type=submit]{
+    background-color: cadetblue;
+    color: midnightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

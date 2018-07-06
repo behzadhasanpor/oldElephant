@@ -1,0 +1,29 @@
+** database
+
+database.name=cms
+database.host=localhost
+database.username=temp
+database.password=1111
+database.port=3306
+database.engine=InnoDB
+database.socket=
+
+
+
+** site_url
+site_url=http://localhost/oldElephant/
+
+** replacements
+replacement.site_url=http://localhost/oldElephant/
+
+** direction of replacement
+** 'reverse' for reverse all replacements
+** 'forward' for do all replacements
+replaceDirection=reverse
+
+
+** flags
+flag.replacement=false
+flag.table_checking=false
+
+
