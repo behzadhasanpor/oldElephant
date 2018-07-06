@@ -19,15 +19,15 @@ i will explain project aspects and usages in bellow headers:<br>
 <br>
 <br>
 Abbreviations:<br>
-OL  : oldElephant framework
+OL  : oldElephant framework<br>
 OLS : OL Source -> a folder contains Developer Configurations
 <h3>
 How To Configure FrameWork
 </h3>
 this no need any complex configuration yet!.OL has a configuration file<br>
 named '.needed' provided for manage some needing input and framework <br>
-initialization.explaint that assume the below text is a part of.needed file:<br>
-<br>
+initialization.this file is in OLS folder.explaint that assume the below <br>
+text is a part of.needed file:<br>
 <pre>
         ** database<br>
         database.name=your_database_name<br>
@@ -38,6 +38,15 @@ initialization.explaint that assume the below text is a part of.needed file:<br>
         site_url=http://localhost/CMS/<br>
         ** replacements<br>
         replacement.site_url=http://localhost/CMS/<br>
+        
+        ** direction of replacement
+        ** 'reverse' for reverse all replacements
+        ** 'forward' for do all replacements
+        replaceDirection=reverse
+        
+        ** flags
+        flag.replacement=false
+        flag.table_checking=false
 </pre>
 the initializer Engine(explane later) will encode that like this:<br>
 the output array is :<br>
@@ -53,15 +62,35 @@ the output array is :<br>
            'replacement'=>[
                'site_url'=>'http://localhost/CMS/'
                        ]
+            'replaceDirection'=>'reverse'
+            'flag'=>[
+                 'replacement'=>'false'
+                 'table_checking'=>'false'
+                    ]
                ]
 </pre><br>
 for this time,i wanna explain important thing about it that <br>
 we need to configure framework.<br>
-<Strong>database</strong> :this part needed for framework and we should <br>
+<br>
+<strong>database</strong> :this part needed for framework and we should <br>
 adjust this information correctly.<br>
-<Strong>site_url</strong> :the based url of site in webserver folder like:<br>
+<br>
+<strong>site_url</strong> :the based url of site in webserver folder like:<br>
 webserver : /var/www/html/<br>
 project folder : /var/www/html/CMS/<br>
 then site_url  =  Scheme://your_host/CMS/ <br>
-(Note:the end slash is needed for site_url)
+(Note:the end slash is needed for site_url)<br>
+<br>
+<strong>replacement</strong>s: it used for indicate what to be replaced with 'site_url' placeholders<br>
+in Apearance folder with specified url<br>
+<strong>replaceDirection</strong>: indicate direction of replace placeholders with orginal<br>
+replace word of them<br>
+<strong>flag</strong>: control flags<br>
+Now for configure the framework we need to first adjust the .needed file with our desired<br>
+settings ,then switch the replacement flag true(we do this only at begining of configuration or <br>
+at transfer the project to a new directory and in the other status the flag should<br>
+remain false),after that we should adjust the replacement direction to forward and access to <br>
+project using 
+<br>
+.....to be written in future 
 
