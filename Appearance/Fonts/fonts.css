@@ -1,11 +1,22 @@
 @font-face {
     font-family: font;
-    src: url('http://localhost/oldElephant/Media/Fonts/HACKED.ttf');
+    src: url('{{@!_site_url_!@}}Media/Fonts/HACKED.ttf');
 }
 @font-face {
     font-family: passage;
-    src: url('http://localhost/oldElephant/Media/Fonts/basictitlefont.ttf');
+    src: url('{{@!_site_url_!@}}Media/Fonts/basictitlefont.ttf');
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
