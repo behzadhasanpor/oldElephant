@@ -10,10 +10,7 @@ i decided to publish it there and i will try to extend this project.<br>
 i will explain project aspects and usages in bellow headers:<br>
 <ul>
   <li>Basic of .needed file and How To Configure FrameWork</li>
-  <li>Hello World!</li>
   <li>Directory</li>
-  <li>Structure</li>
-  <li>Is it MVC-based?</li>
   <li>Update</li>
 </ul>
 <br>
@@ -86,7 +83,7 @@ in Apearance folder with specified url<br>
 replace word of them<br>
 <strong>flag</strong>: control flags<br>
 <h3>How to configure?</h3>
-Now for first configure the framework <br>
+Now for first configure the framework (after download or clone the OL)<br>
 1-) adjust the <strong>database</strong> part with desired settings<br>
 2-) adjust the site_url<br>
 3-) switch the 'replacement' and 'table_checking' <strong>flag</strong>s 'true'(we do this only at first configuration or <br>
@@ -97,5 +94,27 @@ project using
 <br>
 5-) once type site_url in a browser and Enter.then the initializer Engine will<br>
 initialize the configuration of OL and the intro page will be shown<br>
+6-) switch all flags false<br>
+<br>
+<h2>Directory</h2>
+<strong>Appearance</strong> directory : <br>
+contained styles,scripts,.. ,all files with .css and .js scripts can automaticaly add to project<br>
+by Moderator Engine(Explanation later)<br>
+<strong>Media</strong> directory : <br>
+contained all Media files<br>
+<strong>OldElephant</strong> directory : <br>
+main OL framework directory contained all OL 'Engines'<br>
+<strong>OLS</strong> directory : <br>
+a folder contained OL source developer configuration(we should add our configuration
+of web-site in OLS)<br>
+<strong>.htaccess</strong> file : <br>
+web server configuration file<br>
+<strong>index.php</strong> file : <br>
+main page for OL-based site(adjusted in .htaccess -> all site_url requests will guide to this file)<br>
+<br>
+<h2>Update</h2>
+the OL is toddler and will be update and grow up,and as soon as possible a <br>
+documentaion about it will be published.
 
+  
 
