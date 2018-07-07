@@ -19,7 +19,7 @@ replacement.site_url=http://localhost/oldElephant/
 ** direction of replacement
 ** 'reverse' for reverse all replacements
 ** 'forward' for do all replacements
-replaceDirection=reverse
+replaceDirection=forward
 
 
 ** flags
