@@ -9,7 +9,7 @@ i decided to publish it there and i will try to extend this project.<br>
 <br>
 i will explain project aspects and usages in bellow headers:<br>
 <ul>
-  <li>How To Configure FrameWork</li>
+  <li>Basic of .needed file and How To Configure FrameWork</li>
   <li>Hello World!</li>
   <li>Directory</li>
   <li>Structure</li>
@@ -22,12 +22,12 @@ Abbreviations:<br>
 OL  : oldElephant framework<br>
 OLS : OL Source -> a folder contains Developer Configurations
 <h3>
-How To Configure FrameWork
+Basic Of .needed file
 </h3>
-this no need any complex configuration yet!.OL has a configuration file<br>
+for OL, no need any complex configuration yet!.OL has a configuration file<br>
 named '.needed' provided for manage some needing input and framework <br>
-initialization.this file is in OLS folder.explaint that assume the below <br>
-text is a part of.needed file:<br>
+initialization.this file is in OLS folder.assume the below <br>
+text is a part of .needed file : <br>
 <pre>
         ** database<br>
         database.name=your_database_name<br>
@@ -38,23 +38,21 @@ text is a part of.needed file:<br>
         site_url=http://localhost/CMS/<br>
         ** replacements<br>
         replacement.site_url=http://localhost/CMS/<br>
-        
         ** direction of replacement
         ** 'reverse' for reverse all replacements
         ** 'forward' for do all replacements
         replaceDirection=reverse
-        
         ** flags
         flag.replacement=false
         flag.table_checking=false
 </pre>
-the initializer Engine(explane later) will encode that like this:<br>
+the initializer Engine(explaination later) will encode that like this:<br>
 the output array is :<br>
 <pre>
           array=[
            'database' => [
-               'name'=>your_database_name
-               'host'=>your_database_host
+               'name'=>'your_database_name'
+               'host'=>'your_database_host'
                'username'=>'your_database_username'
                'password'=>'your_database_password'
                        ]
@@ -69,7 +67,7 @@ the output array is :<br>
                     ]
                ]
 </pre><br>
-for this time,i wanna explain important thing about it that <br>
+for this time,i wanna explain important things about .needed that <br>
 we need to configure framework.<br>
 <br>
 <strong>database</strong> :this part needed for framework and we should <br>
@@ -86,7 +84,8 @@ in Apearance folder with specified url<br>
 <strong>replaceDirection</strong>: indicate direction of replace placeholders with orginal<br>
 replace word of them<br>
 <strong>flag</strong>: control flags<br>
-Now for configure the framework we need to first adjust the .needed file with our desired<br>
+<h3>How to configure?</h3>
+Now for first configure the framework we need to adjust the .needed file with our desired<br>
 settings ,then switch the replacement flag true(we do this only at begining of configuration or <br>
 at transfer the project to a new directory and in the other status the flag should<br>
 remain false),after that we should adjust the replacement direction to forward and access to <br>
