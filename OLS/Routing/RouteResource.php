@@ -20,6 +20,11 @@ namespace OLS\Routing;
 trait RouteResource{
 
     public $route_assignment=[
+        ''=>[
+            'http_method'=>'get',
+            'auth_id'=>'',
+            'viewer'=>'HomeView'
+        ],
         'home'=>[
             'http_method'=>'get',
             'auth_id'=>'',
