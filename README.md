@@ -27,7 +27,7 @@ Basic Of .needed file
 for OL, no need any complex configuration yet!.OL has a configuration file<br>
 named '.needed' provided for manage some needing input and framework <br>
 initialization.this file is in OLS folder.assume the below <br>
-text is a part of .needed file : <br>
+text is a sample of .needed file : <br>
 <pre>
         ** database<br>
         database.name=your_database_name<br>
