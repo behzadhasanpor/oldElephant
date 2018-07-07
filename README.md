@@ -73,10 +73,11 @@ we need to configure framework.<br>
 <strong>database</strong> :this part needed for framework and we should <br>
 adjust this information correctly.<br>
 <br>
-<strong>site_url</strong> :the based url of site in webserver folder like:<br>
+<strong>site_url</strong> :the based url of site.<br>
+assume that we have below details about a web site:<br>
 webserver : /var/www/html/<br>
 project folder : /var/www/html/CMS/<br>
-then site_url  =  Scheme://your_host/CMS/ <br>
+then we have -> site_url  =  Scheme://your_host/CMS/ <br>
 (Note:the end slash is needed for site_url)<br>
 <br>
 <strong>replacement</strong>s: it used for indicate what to be replaced with 'site_url' placeholders<br>
@@ -85,11 +86,16 @@ in Apearance folder with specified url<br>
 replace word of them<br>
 <strong>flag</strong>: control flags<br>
 <h3>How to configure?</h3>
-Now for first configure the framework we need to adjust the .needed file with our desired<br>
-settings ,then switch the replacement flag true(we do this only at begining of configuration or <br>
+Now for first configure the framework <br>
+1-) adjust the <strong>database</strong> part with desired settings<br>
+2-) adjust the site_url<br>
+3-) switch the 'replacement' and 'table_checking' <strong>flag</strong>s 'true'(we do this only at first configuration or <br>
 at transfer the project to a new directory and in the other status the flag should<br>
-remain false),after that we should adjust the replacement direction to forward and access to <br>
+remain false).<br>
+4-) adjust the <strong>replaceDirection</strong> to 'forward' and access to <br>
 project using 
 <br>
-.....to be written in future 
+5-) once type site_url in a browser and Enter.then the initializer Engine will<br>
+initialize the configuration of OL and the intro page will be shown<br>
+
 
