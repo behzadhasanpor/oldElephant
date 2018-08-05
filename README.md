@@ -4,10 +4,8 @@ Intro
 </h3>
 the oldElephant is a php framework i just designed it first for <br>
 my personal development purposes! but i saw it has more<br>
-ability to use as a 'frame for work' and develope php webpages,thus<br>
+ability to use as a 'frame for work' and develope php Applications,thus<br>
 i decided to publish it there and i will try to extend this project.<br>
-<br>
-i will explain project aspects and usages in bellow headers:<br>
 <ul>
   <li>Basic of .needed file and How To Configure FrameWork</li>
   <li>Directory</li>
