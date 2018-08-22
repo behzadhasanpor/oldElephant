@@ -1,4 +1,7 @@
 <img src="http://oi63.tinypic.com/aw709.jpg">
+
+att : <span style="color:red">the codes of this project didnt refactored yet</span> and has a big TODO for work on that!!
+<br>
 <h3>
 Intro
 </h3>
