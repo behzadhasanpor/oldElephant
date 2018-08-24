@@ -84,6 +84,7 @@ class Router
                      * and the Authentication Unit will return the result that should be executed
                      *
                      */
+
                 $auth = new Selector();
                 $response = $auth->auth_process($route_array);
                 self::$returned_details_from_auth_engine=$response['details'];
@@ -94,6 +95,7 @@ class Router
 
             }
         }else{
+
             return $router->special_route_assignment['^']['viewer'];
         }
 
@@ -169,9 +171,10 @@ class Router
      */
     public static function current_route()
     {
-        $request_scheme=IO::filter_input($_SERVER,'REQUEST_SCHEME');
+        $request_scheme=IO::filter_input($_SERVER,'SERVER_PROTOCOL');
+	if($request_scheme=="HTTP/1.1"){$request_scheme='http';}
         $request_uri=IO::filter_input($_SERVER,'REQUEST_URI');
-        $server_name=IO::filter_input($_SERVER,'SERVER_NAME');
+        $server_name=IO::filter_input($_SERVER,'HTTP_HOST');
         $current_url=$request_scheme.'://'.$server_name.$request_uri;
         $init=new Initializer();
         $str=$init->read_need_file()['site_url'];
@@ -186,6 +189,7 @@ class Router
      * route that find
      */
     public function search_for_similar_route($using_ajax_flag=null,$initial_ajax_array=null){
+
         if(!is_null($using_ajax_flag)){
             $current_route = $this->current_route()['route'];
             foreach ($this->ajax_common_route_assignment as $route => $assign_array) {

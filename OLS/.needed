@@ -1,20 +1,18 @@
 ** database
 
-database.name=cms
-database.host=localhost
-database.username=temp
-database.password=1111
-database.port=3306
-database.engine=InnoDB
-database.socket=
-
-
+database.name=DB_NAME
+database.host=DB_HOST
+database.username=DB_USERNAME
+database.password=DB_PASSWORD
+database.port=DB_PORT
+database.engine=DB_ENGINE
+database.socket=DB_SOCKET
 
 ** site_url
-site_url=http://localhost/oldElephant/
+site_url=http://localhost:2828/
 
 ** replacements
-replacement.site_url=http://localhost/oldElephant/
+replacement.site_url=http://localhost:2828/
 
 ** direction of replacement
 ** 'reverse' for reverse all replacements

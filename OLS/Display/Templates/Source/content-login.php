@@ -6,5 +6,5 @@
         <input type="password" name="password" value="Password"><br>
         <input type="submit" value="Login">
     </form>
-    Do not have an account?<a href="<?php echo $site_url;?>signup"> go to home</a>
+    Do not have an account?<a href="<?php echo $site_url;?>signup">Sign up</a>
 </div>
