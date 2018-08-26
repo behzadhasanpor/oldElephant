@@ -5,10 +5,9 @@ att : <span style="color:red">the codes of this project didnt refactored yet</sp
 <h3>
 Intro
 </h3>
-the oldElephant is a php framework i just designed it first for <br>
-my personal development purposes! but i saw it has more<br>
-ability to use as a 'frame for work' and develope php Applications,thus<br>
-i decided to publish it there and i will try to extend this project.<br>
+the oldElephant is a php framework designed first for development purposes!
+but i saw it has more ability to use as a 'frame for work' and develope php <br>
+Applications,thus we decided to publish it there and we will try to extend this project.<br>
 <ul>
   <li>Basic of .needed file and How To Configure FrameWork</li>
   <li>Directory</li>
@@ -73,10 +72,6 @@ adjust this information correctly.<br>
 <br>
 <strong>site_url</strong> :the based url of site.<br>
 assume that we have below details about a web site:<br>
-webserver : /var/www/html/<br>
-project folder : /var/www/html/CMS/<br>
-then we have -> site_url  =  Scheme://your_host/CMS/ <br>
-(Note:the end slash is needed for site_url)<br>
 <br>
 <strong>replacement</strong>s: it used for indicate what to be replaced with 'site_url' placeholders<br>
 in Apearance folder with specified url<br>
@@ -85,6 +80,7 @@ replace word of them<br>
 <strong>flag</strong>: control flags<br>
 <h3>How to configure?</h3>
 Now for first configure the framework (after download or clone the OL)<br>
+0-) run web server!
 1-) adjust the <strong>database</strong> part with desired settings<br>
 2-) adjust the site_url<br>
 3-) switch the 'replacement' and 'table_checking' <strong>flag</strong>s 'true'(we do this only at first configuration or <br>
