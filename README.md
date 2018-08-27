@@ -32,9 +32,9 @@ text is a sample of .needed file : <br>
         database.username=your_database_username<br>
         database.password=your_database_password<br>
         ** site_url<br>
-        site_url=http://localhost/CMS/<br>
+        site_url=http://localhost:8000/<br>
         ** replacements<br>
-        replacement.site_url=http://localhost/CMS/<br>
+        replacement.site_url=http://localhost:8000/<br>
         ** direction of replacement
         ** 'reverse' for reverse all replacements
         ** 'forward' for do all replacements
@@ -53,9 +53,9 @@ the output array is :<br>
                'username'=>'your_database_username'
                'password'=>'your_database_password'
                        ]
-           'site_url'=> 'http://localhost/CMS/'
+           'site_url'=> 'http://localhost:8000/'
            'replacement'=>[
-               'site_url'=>'http://localhost/CMS/'
+               'site_url'=>'http://localhost:8000/'
                        ]
             'replaceDirection'=>'reverse'
             'flag'=>[
